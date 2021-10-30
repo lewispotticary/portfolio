@@ -1,0 +1,17 @@
+.navigationContainer {
+  background-color: grey;
+  padding: 1rem 2rem 1rem 2rem;
+  box-shadow: 0 10px 6px -6px #282828;
+  position: relative;
+  z-index: 2;
+}
+
+.navigationContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  height: 3rem;
+}
