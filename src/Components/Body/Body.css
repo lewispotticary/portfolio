@@ -1,0 +1,15 @@
+.bodyContainer {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.titleContainer {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.card {
+  margin: 0 2% 3% !important;
+  height: 100%;
+}
