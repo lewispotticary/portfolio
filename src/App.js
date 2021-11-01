@@ -5,6 +5,7 @@ import './App.css';
 import Navigation from './Components/Navigation/Navigation';
 import Header from './Components/Header/Header';
 import Body from './Components/Body/Body'
+import Contact from './Components/Contact/Contact';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Navigation />
       <Header />
       <Body />
+      <Contact />
     </div>
   );
 }
