@@ -12,7 +12,7 @@ function Contact() {
             method="POST"
             data-netlify="true"
             >
-                <input type="hidden" name="form-name" value="contact-from"/>
+                <input type="hidden" name="form-name" value="contact-form"/>
                 <input type="text" placeholder="Name" name="name"/>
                 <input type="text" placeholder="Email" name="email"/>
                 <textarea name="message" placeholder="Enter your message"></textarea>
