@@ -7,22 +7,16 @@ function Contact() {
         <div className="contactContainer">
             <Typography variant="h2" color="white"><b>Contact</b></Typography>
             
-            <form name="contact" method="POST" data-netlify="true" onSubmit="submit">
-                
-                <input type="hidden" name="form-name" value="contact"/>
-
-                <p>
-                    <label>Your Name: <input type="text" name="name" /></label>   
-                </p>
-                <p>
-                    <label>Your Email: <input type="email" name="email" /></label>
-                </p>
-                <p>
-                    <label>Message: <textarea name="message"></textarea></label>
-                </p>
-                <p>
-                    <button type="submit">Send</button>
-                </p>
+            <form
+            name="contact-form"
+            method="POST"
+            data-netlify="true"
+            >
+                <input type="hidden" name="form-name" value="contact-from"/>
+                <input type="text" placeholder="Name" name="name"/>
+                <input type="text" placeholder="Email" name="email"/>
+                <textarea name="message" placeholder="Enter your message"></textarea>
+                <button type="submit">Submit</button>
             </form>
         </div>
     )
