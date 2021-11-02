@@ -1,6 +1,6 @@
 import React from 'react'
 
-import {Typography} from '@mui/material';
+import {Typography, Input} from '@mui/material';
 
 function Contact() {
     return (
@@ -13,6 +13,7 @@ function Contact() {
             data-netlify="true"
             >
                 <input type="hidden" name="form-name" value="contact-form"/>
+                <Input type="text" placeholder="Name" name="name"/>
                 <input type="text" placeholder="Name" name="name"/>
                 <input type="text" placeholder="Email" name="email"/>
                 <textarea name="message" placeholder="Enter your message"></textarea>
