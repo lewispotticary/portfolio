@@ -3,9 +3,37 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-left: 11%;
+  margin-right: 11%;
 }
 
 .formContent {
+  margin-top: 2rem;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+input,
+textarea {
+  margin-bottom: 1rem;
+  width: 100%;
+  max-width: 35rem;
+  height: 3rem;
+  border-radius: 0.5rem;
+  border: 1px solid grey;
+  padding: 1rem;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+textarea {
+  height: 15rem;
+}
+
+.formSubmit {
+  width: 100%;
+  max-width: 35rem;
 }

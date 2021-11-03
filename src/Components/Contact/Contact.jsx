@@ -19,7 +19,7 @@ function Contact() {
                 <input type="text" placeholder="Name" name="name"/>
                 <input type="text" placeholder="Email" name="email"/>
                 <textarea name="message" placeholder="Enter your message"></textarea>
-                <Button type="submit">Submit</Button>
+                <Button sx={{ p: 2 }} type="submit" variant="contained" className="formSubmit">Submit</Button>
                 
             </form>
         </div>
