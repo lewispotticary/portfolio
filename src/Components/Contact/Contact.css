@@ -1,0 +1,11 @@
+.contactContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.formContent {
+  display: flex;
+  flex-direction: column;
+}
