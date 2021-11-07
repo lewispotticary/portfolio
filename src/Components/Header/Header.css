@@ -18,10 +18,22 @@
   max-width: 44.7rem;
   padding: 0.5rem;
   border-radius: 0.5rem;
-  margin-bottom: 1rem;
   margin-top: 1rem;
 }
 
+.secondaryBox {
+  background-color: black;
+  max-width: 10.5rem;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+  margin-top: 0.3rem;
+}
+
+a {
+  text-decoration: none;
+  color: grey;
+}
 .projectButton {
   max-width: 15rem;
 }
