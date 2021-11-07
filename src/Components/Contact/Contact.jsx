@@ -6,9 +6,8 @@ import './Contact.css'
 
 function Contact() {
     return (
-        <div className="contactContainer">
-            <Typography variant="h2" color="white"><b>Contact</b></Typography>
-            
+        <div className="contactContainer" id="Contact">
+            <Typography variant="h2" color="white"><b>Contact</b></Typography>      
             <form
             name="contact-form"
             method="POST"
