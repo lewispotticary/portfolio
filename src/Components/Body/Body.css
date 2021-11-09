@@ -6,7 +6,15 @@
 .titleContainer {
   display: flex;
   justify-content: center;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
+}
+
+.cardRow1 {
+  max-height: 18rem;
+}
+
+.cardRow2 {
+  max-height: 18rem;
 }
 
 .card {
