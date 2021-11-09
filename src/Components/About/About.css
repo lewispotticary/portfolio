@@ -1,0 +1,21 @@
+.aboutContainer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 11%;
+  margin-right: 11%;
+  margin-top: 2rem;
+}
+
+.aboutContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+hr {
+  width: 100%;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
