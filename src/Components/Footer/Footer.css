@@ -1,0 +1,36 @@
+.footerContainer {
+  background-color: black;
+  padding: 1rem 10% 1rem 10%;
+  box-shadow: 0px -4px 10px 0px #282828;
+  z-index: 6;
+  position: relative;
+}
+
+.footerContentRow1 {
+  display: flex;
+  justify-content: center;
+}
+
+.footerContentRow2 {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.footerImages {
+  height: 2rem;
+  margin: 0rem 1rem 0rem 1rem;
+}
+
+.upArrow {
+  color: white;
+}
+
+button {
+  background-color: black;
+  border: none;
+}
+
+.upArrow:hover {
+  transform: translateY(-2px);
+}
