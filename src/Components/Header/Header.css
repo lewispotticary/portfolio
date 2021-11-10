@@ -38,16 +38,7 @@ a {
   max-width: 15rem;
 }
 
-@media only screen and (max-width: 1000px) {
-  .boxText {
-    display: none;
-  }
-  .box {
-    max-width: 30.5rem;
-  }
-}
-
-@media only screen and (max-width: 930px) {
+@media only screen and (max-width: 1390px) {
   .boxText {
     display: none;
   }
