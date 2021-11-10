@@ -49,12 +49,12 @@ function Navigation() {
 
     return (
         <BrowserRouter>
-          <div className="navigationContainer">
+          <div className="navigationContainer" id="Navigation">
               <div className="navigationContent">
                   <Typography variant="h2" color="white"><b>{logo}</b></Typography>
                   <Breadcrumbs className="breadcrumbMenu" aria-label="breadcrumb" color="white" >
                     <Link underline="none" color="white" variant="h6" href="/"><b><HashLink smooth className="navLinks" to="#Projects">Projects</HashLink></b></Link>
-                    <Link underline="none" color="white" variant="h6" href=""><b>About</b></Link>
+                    <Link underline="none" color="white" variant="h6" href=""><b><HashLink smooth className="navLinks" to="#About">About</HashLink></b></Link>
                     <Link underline="none" color="white" variant="h6" href=""><b><HashLink smooth className="navLinks" to="#Contact">Contact</HashLink></b></Link>
                   </Breadcrumbs>
                   {['right'].map((anchor) => (
