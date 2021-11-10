@@ -22,8 +22,8 @@ function Footer() {
                 </div>
                 <hr />
                 <div className="footerContentRow2">
-                    <img className="footerImages" src={linkedinLogo} alt="" />
-                    <img className="footerImages" src={githubLogo} alt="" />
+                    <a className="test1" href="https://www.linkedin.com/in/lewispotticary/" target="_blank"><img className="footerImages" src={linkedinLogo} alt="" /></a>
+                    <a href="https://github.com/lewispotticary" target="_blank"><img hr className="footerImages" src={githubLogo} alt="" /></a>
                 </div>
             </div>
         </BrowserRouter>

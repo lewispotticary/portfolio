@@ -31,6 +31,7 @@ button {
   border: none;
 }
 
-.upArrow:hover {
+.upArrow:hover,
+.footerImages:hover {
   transform: translateY(-2px);
 }
