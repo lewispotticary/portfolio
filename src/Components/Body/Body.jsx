@@ -8,9 +8,11 @@ import expenseTrackerImage from './expenseTrackerProject.JPG'
 
 import portfolioProject from './portfolioProject.JPG'
 
-import githubImage from './githubImage.png'
+import githubImage from './githubImage.jpg'
 
 import {Typography, Button, Card, CardMedia, CardContent, CardActions, Grid, Modal, Box, } from '@mui/material';
+
+import Animation from '../Animation/Animation';
 
 function Body() {
 
@@ -33,11 +35,12 @@ function Body() {
     return (
         <div className="bodyContainer">
             <div className="titleContainer" id="Projects">
-                <Typography variant="h2" color="white"><b>Projects</b></Typography>
-            </div>
+                <Typography variant="h2" color="white"><b>Projects.</b></Typography>
+            </div>       
             <div className="cardContainer">
                 <Grid container justify="center">
                     <Grid item component={Card} xs={12} md={3.5} className="card">
+                        <Animation> 
                         <CardMedia
                         component="img"
                         image={covidTrackerImage}
@@ -72,8 +75,10 @@ function Body() {
                             <Button size="small" variant="contained" href="https://musing-bassi-1d4cea.netlify.app/" target="_blank">Live Site</Button>
                             <Button size="small" variant="outlined" href="https://github.com/lewispotticary/coronavirus-tracker" target="_blank">Source</Button>
                         </CardActions>
+                        </Animation> 
                     </Grid>
                     <Grid item component={Card} xs={12} md={3.5} className="card">
+                        <Animation> 
                         <CardMedia
                         component="img"
                         image={expenseTrackerImage}
@@ -93,8 +98,10 @@ function Body() {
                             <Button size="small" variant="contained" href="https://naughty-montalcini-8be930.netlify.app/" target="_blank">Live Site</Button>
                             <Button size="small" variant="outlined" href="https://github.com/lewispotticary/react-expense-tracker" target="_blank">Source</Button>
                         </CardActions>
+                        </Animation> 
                     </Grid>
                     <Grid item component={Card} xs={12} md={3.5} className="card">
+                        <Animation> 
                         <CardMedia
                         component="img"
                         image={portfolioProject}
@@ -113,8 +120,10 @@ function Body() {
                             </Box>
                             <Button size="small" variant="outlined" href="https://github.com/lewispotticary/portfolio" target="_blank">Source</Button>
                         </CardActions>
+                        </Animation> 
                     </Grid>
                     <Grid item component={Card} xs={12} md={3.5} className="card">
+                        <Animation> 
                         <CardMedia
                         component="img"
                         image={githubImage}
@@ -130,9 +139,10 @@ function Body() {
                         <CardActions>
                             <Button size="small" variant="contained" href="https://github.com/lewispotticary" target="_blank">All Projects</Button>
                         </CardActions>
+                        </Animation> 
                     </Grid>
                 </Grid>
-            </div>      
+            </div>     
         </div>
     )
 }

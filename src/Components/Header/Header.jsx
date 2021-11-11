@@ -16,14 +16,14 @@ function Header() {
             <div className="headerContainer">
                 <div className="headerContent">
                     <motion.div
-                        animate={{ x: [-1000, 100, 0] }}
+                        animate={{ x: [-500, 100, 0] }}
                         transition={{ ease: "easeOut", duration: 1 }}
                     >
                         <Typography variant="h2" color="white"><b>Hi! I'm Lewis Potticary</b></Typography>
                     </motion.div>
                     <motion.div 
-                        animate={{ x: [-1000, 100, 0] }}
-                        transition={{ ease: "easeOut", duration: 1, delay: 1 }}
+                        animate={{ x: [1800, 100, 0] }}
+                        transition={{ ease: "easeOut", duration: 1, delay: 2 }}
                     >
                         <div className="box">
                             <Typography variant="h4" color="white"><b>Aspiring Front-end Developer</b></Typography>
@@ -34,8 +34,8 @@ function Header() {
                         </div>
                     </motion.div>
                     <motion.div
-                        animate={{ x: [-1000, 100, 0] }}
-                        transition={{ ease: "easeOut", duration: 1, delay: 1.5 }}
+                        animate={{ y: [-500, 100, 0] }}
+                        transition={{ ease: "easeOut", duration: 1, delay: 3.5 }}
                     >
                         <HashLink smooth className="navLinks" to="#Projects">
                             <Button className="projectButton" variant="contained">View Projects</Button>
