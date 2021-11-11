@@ -5,6 +5,13 @@
   align-items: center;
   margin-left: 11%;
   margin-right: 11%;
+  margin-bottom: 5rem;
+}
+
+.contactTitle {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
 }
 
 .formContent {
