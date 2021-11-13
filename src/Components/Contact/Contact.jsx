@@ -9,11 +9,11 @@ import Animation from '../Animation/Animation';
 function Contact() {
     return (
         <div>
-        <div className="contactTitle">
+        <div className="contactTitle" id="Contact">
             <Typography variant="h2" color="white"><b>Contact.</b></Typography>
         </div>
         <Animation>
-        <div className="contactContainer" id="Contact">
+        <div className="contactContainer">
                 
             
             
@@ -25,7 +25,6 @@ function Contact() {
             >
                 
                 <input type="hidden" name="form-name" value="contact-form"/>
-                
                 <input type="text" placeholder="Name" name="name"/>
                 <input type="text" placeholder="Email" name="email"/>
                 <textarea name="message" placeholder="Enter your message"></textarea>
