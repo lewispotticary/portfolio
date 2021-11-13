@@ -9,8 +9,18 @@
   margin-bottom: 3rem;
 }
 
+.aboutBox {
+  background-color: black;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 10px 6px -6px #282828;
+  z-index: 4;
+  position: relative;
+}
+
 hr {
   width: 100%;
   margin-bottom: 1rem;
   margin-top: 1rem;
+  color: white;
 }
