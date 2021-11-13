@@ -19,7 +19,7 @@ function Header() {
                         animate={{ x: [-500, 100, 0] }}
                         transition={{ ease: "easeOut", duration: 1 }}
                     >
-                        <Typography variant="h2" color="white"><b>Hi! I'm Lewis Potticary</b></Typography>
+                        <Typography variant="h2" color="white"><b>Hi! I'm Lewis Potticary.</b></Typography>
                     </motion.div>
                     <motion.div 
                         animate={{ x: [1800, 100, 0] }}
