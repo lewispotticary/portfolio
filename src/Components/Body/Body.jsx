@@ -39,7 +39,7 @@ function Body() {
             </div>       
             <div className="cardContainer">
                 <Grid container justify="center">
-                    <Grid item component={Card} xs={12} md={3.5} className="card">
+                    <Grid item component={Card} xs={12} sm={12} md={5.5} className="card" style={{backgroundColor: "black"}}>
                         <Animation> 
                         <CardMedia
                         component="img"
@@ -48,8 +48,8 @@ function Body() {
                         className="cardRow1"
                         />
                         <CardContent>
-                            <Typography gutterBottom variant="h5" component="div">Covid-19 Tracker</Typography>
-                            <Typography variant="body1" color="black">
+                            <Typography gutterBottom variant="h5" component="div" color="white">Covid-19 Tracker</Typography>
+                            <Typography variant="body1" color="white">
                             Covid-19 tracker web application. Built using React.JS, Material UI, Chart.JS, and Leaflet.JS. Fully responsive.
                             </Typography>
                         </CardContent>
@@ -61,11 +61,17 @@ function Body() {
                             aria-describedby="modal-modal-description"
                             >
                             <Box sx={style}>
-                                <Typography id="modal-modal-title" variant="h6" component="h2">
-                                Text in a modal
+                                <Typography id="modal-modal-title" variant="h5" component="h2">Covid-19 Tracker</Typography>
+                                <Typography id="modal-modal-title" variant="h6" component="h2" sx={{ mt: 2 }}>Goals of the project</Typography>
+                                <Typography id="modal-modal-description" sx={{ mt: 2 }}>
+                                The goal of the Covid-19 tracker project was to use a API to pull covid-19 data and present this data using javascript librarys
+                                such as Leaflet JS and Chart JS.
+                                </Typography>
+                                <Typography id="modal-modal-title" variant="h6" component="h2" sx={{ mt: 2 }}>
+                                Challenges Faced
                                 </Typography>
                                 <Typography id="modal-modal-description" sx={{ mt: 2 }}>
-                                Duis mollis, est non commodo luctus, nisi erat porttitor ligula.
+                                One of the challenges faced witht covid-19 tracker
                                 </Typography>
                             </Box>
                             </Modal>
@@ -77,7 +83,7 @@ function Body() {
                         </CardActions>
                         </Animation> 
                     </Grid>
-                    <Grid item component={Card} xs={12} md={3.5} className="card">
+                    <Grid item component={Card} xs={12} sm={12} md={5.5} className="card" style={{backgroundColor: "black"}}>
                         <Animation> 
                         <CardMedia
                         component="img"
@@ -86,8 +92,8 @@ function Body() {
                         className="cardRow1"
                         />
                         <CardContent>
-                            <Typography gutterBottom variant="h5" component="div">Expense Tracker</Typography>
-                            <Typography variant="body1" color="black">
+                            <Typography gutterBottom variant="h5" component="div" color="white">Expense Tracker</Typography>
+                            <Typography variant="body1" color="white">
                             Expense tracker web application. Built using React.JS, Bootstrap and Chart.JS. Fully responsive.
                             </Typography>
                         </CardContent>
@@ -100,7 +106,7 @@ function Body() {
                         </CardActions>
                         </Animation> 
                     </Grid>
-                    <Grid item component={Card} xs={12} md={3.5} className="card">
+                    <Grid item component={Card} xs={12} sm={12} md={5.5} className="card" style={{backgroundColor: "black"}}>
                         <Animation> 
                         <CardMedia
                         component="img"
@@ -109,8 +115,8 @@ function Body() {
                         className="cardRow2"
                         />
                         <CardContent>
-                            <Typography gutterBottom variant="h5" component="div">Portfolio Website</Typography>
-                            <Typography variant="body1" color="black">
+                            <Typography gutterBottom variant="h5" component="div" color="white">Portfolio Website</Typography>
+                            <Typography variant="body1" color="white">
                             My personal portfolio website. Built using React.JS, Material.UI, React Router and React Router Hash Link. Fully Responsive.
                             </Typography>
                         </CardContent>
@@ -122,7 +128,7 @@ function Body() {
                         </CardActions>
                         </Animation> 
                     </Grid>
-                    <Grid item component={Card} xs={12} md={3.5} className="card">
+                    <Grid item component={Card} xs={12} sm={12} md={5.5} className="card" style={{backgroundColor: "black"}}>
                         <Animation> 
                         <CardMedia
                         component="img"
@@ -131,8 +137,8 @@ function Body() {
                         className="cardRow2"
                         />
                         <CardContent>
-                            <Typography gutterBottom variant="h5" component="div">Other Projects</Typography>
-                            <Typography variant="body1" color="black" marginBottom="auto">
+                            <Typography gutterBottom variant="h5" component="div" color="white">Other Projects</Typography>
+                            <Typography variant="body1" color="white" marginBottom="auto">
                             Take a look at my personal GitHub account where I store all my personal projects, also see what I'm currently working on.
                             </Typography>
                         </CardContent>
