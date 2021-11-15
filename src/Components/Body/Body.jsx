@@ -16,9 +16,20 @@ import Animation from '../Animation/Animation';
 
 function Body() {
 
-    const [open, setOpen] = React.useState(false);
-    const handleOpen = () => setOpen(true);
-    const handleClose = () => setOpen(false);
+    //Covid Tracker Modal
+    const [covidTracker, setCovidTracker] = React.useState(false);
+    const openCovidTracker = () => setCovidTracker(true);
+    const closeCovidTracker = () => setCovidTracker(false);
+
+    //Expense Tracker Modal
+    const [expenseTracker, setExpenseTracker] = React.useState(false);
+    const openExpenseTracker = () => setExpenseTracker(true);
+    const closeExpenseTracker = () => setExpenseTracker(false);
+
+    //Portfolio Modal
+    const [portfolio, setPortfolio] = React.useState(false);
+    const openPortfolio = () => setPortfolio(true);
+    const closePortfolio = () => setPortfolio(false);
 
     const style = {
         position: 'absolute',
@@ -39,108 +50,92 @@ function Body() {
             </div>       
             <div className="cardContainer">
                 <Grid container justify="center">
+                    {/*Covid-19 Tracker Card*/}
                     <Grid item component={Card} xs={12} sm={12} md={5.5} className="card" style={{backgroundColor: "black"}}>
                         <Animation> 
-                        <CardMedia
-                        component="img"
-                        image={covidTrackerImage}
-                        alt="green iguana"
-                        className="cardRow1"
-                        />
-                        <CardContent>
-                            <Typography gutterBottom variant="h5" component="div" color="white">Covid-19 Tracker</Typography>
-                            <Typography variant="body1" color="white">
-                            Covid-19 tracker web application. Built using React.JS, Material UI, Chart.JS, and Leaflet.JS. Fully responsive.
-                            </Typography>
-                        </CardContent>
-                        <CardActions>
-                            <Modal
-                            open={open}
-                            onClose={handleClose}
-                            aria-labelledby="modal-modal-title"
-                            aria-describedby="modal-modal-description"
-                            >
-                            <Box sx={style}>
-                                <Typography id="modal-modal-title" variant="h5" component="h2">Covid-19 Tracker</Typography>
-                                <Typography id="modal-modal-title" variant="h6" component="h2" sx={{ mt: 2 }}>Goals of the project</Typography>
-                                <Typography id="modal-modal-description" sx={{ mt: 2 }}>
-                                The goal of the Covid-19 tracker project was to use a API to pull covid-19 data and present this data using javascript librarys
-                                such as Leaflet JS and Chart JS.
+                            <CardMedia component="img" image={covidTrackerImage} alt="Covid Tracker Project Image" className="cardRow1"/>
+                            <CardContent>
+                                <Typography gutterBottom variant="h5" component="div" color="white">Covid-19 Tracker</Typography>
+                                <Typography variant="body1" color="white">
+                                Covid-19 tracker web application. Built using React.JS, Material UI, Chart.JS, and Leaflet.JS. Fully responsive.
                                 </Typography>
-                                <Typography id="modal-modal-title" variant="h6" component="h2" sx={{ mt: 2 }}>
-                                Challenges Faced
-                                </Typography>
-                                <Typography id="modal-modal-description" sx={{ mt: 2 }}>
-                                One of the challenges faced witht covid-19 tracker
-                                </Typography>
-                            </Box>
-                            </Modal>
-                            <Box mr={1}>
-                                <Button size="small" onClick={handleOpen} variant="contained" color="success">Full Description</Button>
-                            </Box>
-                            <Button size="small" variant="contained" href="https://musing-bassi-1d4cea.netlify.app/" target="_blank">Live Site</Button>
-                            <Button size="small" variant="outlined" href="https://github.com/lewispotticary/coronavirus-tracker" target="_blank">Source</Button>
-                        </CardActions>
+                            </CardContent>
+                            <CardActions>
+                                <Modal open={covidTracker} onClose={closeCovidTracker}>
+                                    <Box sx={style}>
+                                        <Typography variant="h5" component="h2">Covid-19 Tracker</Typography>
+                                        <Typography variant="h6" component="h2" sx={{ mt: 2 }}>Goals of the project</Typography>
+                                        <Typography sx={{ mt: 2 }}>The goal of the Covid-19 tracker project was to use a API to pull covid-19 data and present this data using javascript librarys such as Leaflet JS and Chart JS.</Typography>
+                                        <Typography variant="h6" component="h2" sx={{ mt: 2 }}>Challenges Faced</Typography>
+                                        <Typography sx={{ mt: 2 }}>One of the challenges faced creating the covid-19 tracker was pulling data from multiple API's, manipulating this data using javascript methods such as map, then storing this data in state hooks and finally taking the data from the state hooks and presenting in the form of graphs and maps.<br /><br />Another challenge faced was the creation of the map feature using leaflet JS. This was a challenge as map center and zoom attribute needed to be dynamic depending on country selected but leaflet JS didnt update automatically when state hook changed. So an extra function had to be created to set center and zoom for when the state hook changed.</Typography>
+                                    </Box>
+                                </Modal>
+                                <Box mr={1}>
+                                    <Button size="small" onClick={openCovidTracker} variant="contained" color="success">Full Description</Button>
+                                </Box>
+                                <Button size="small" variant="contained" href="https://musing-bassi-1d4cea.netlify.app/" target="_blank">Live Site</Button>
+                                <Button size="small" variant="outlined" href="https://github.com/lewispotticary/coronavirus-tracker" target="_blank">Source</Button>
+                            </CardActions>
                         </Animation> 
                     </Grid>
+                    {/*Expense Tracker Card*/}
                     <Grid item component={Card} xs={12} sm={12} md={5.5} className="card" style={{backgroundColor: "black"}}>
                         <Animation> 
-                        <CardMedia
-                        component="img"
-                        image={expenseTrackerImage}
-                        alt="green iguana"
-                        className="cardRow1"
-                        />
-                        <CardContent>
-                            <Typography gutterBottom variant="h5" component="div" color="white">Expense Tracker</Typography>
-                            <Typography variant="body1" color="white">
-                            Expense tracker web application. Built using React.JS, Bootstrap and Chart.JS. Fully responsive.
-                            </Typography>
-                        </CardContent>
-                        <CardActions>
-                            <Box mr={1}>
-                                <Button size="small" onClick={handleOpen} variant="contained" color="success">Full Description</Button>
-                            </Box>
-                            <Button size="small" variant="contained" href="https://naughty-montalcini-8be930.netlify.app/" target="_blank">Live Site</Button>
-                            <Button size="small" variant="outlined" href="https://github.com/lewispotticary/react-expense-tracker" target="_blank">Source</Button>
-                        </CardActions>
+                            <CardMedia component="img" image={expenseTrackerImage} alt="Expense Tracker Project Image" className="cardRow1"/>
+                            <CardContent>
+                                <Typography gutterBottom variant="h5" component="div" color="white">Expense Tracker</Typography>
+                                <Typography variant="body1" color="white">Expense tracker web application. Built using React.JS, Bootstrap and Chart.JS. Fully responsive.</Typography>
+                            </CardContent>
+                            <CardActions>
+                                <Modal open={expenseTracker} onClose={closeExpenseTracker}>
+                                    <Box sx={style}>
+                                        <Typography variant="h5" component="h2">Covid-18 Tracker</Typography>
+                                        <Typography variant="h6" component="h2" sx={{ mt: 2 }}>Goals of the project</Typography>
+                                        <Typography sx={{ mt: 2 }}>The goal of the Covid-19 tracker project was to use a API to pull covid-19 data and present this data using javascript librarys such as Leaflet JS and Chart JS.</Typography>
+                                        <Typography variant="h6" component="h2" sx={{ mt: 2 }}>Challenges Faced</Typography>
+                                        <Typography sx={{ mt: 2 }}>One of the challenges faced creating the covid-19 tracker was pulling data from multiple API's, manipulating this data using javascript methods such as map, then storing this data in state hooks and finally taking the data from the state hooks and presenting in the form of graphs and maps.<br /><br />Another challenge faced was the creation of the map feature using leaflet JS. This was a challenge as map center and zoom attribute needed to be dynamicdepending on country selected but leaflet JS didnt update automatically when state hook changed. So an extra function had to be created to set center and zoom for when the state hook changed.</Typography>
+                                    </Box>
+                                </Modal>
+                                <Box mr={1}>
+                                    <Button size="small" onClick={openExpenseTracker} variant="contained" color="success">Full Description</Button>
+                                </Box>
+                                <Button size="small" variant="contained" href="https://naughty-montalcini-8be930.netlify.app/" target="_blank">Live Site</Button>
+                                <Button size="small" variant="outlined" href="https://github.com/lewispotticary/react-expense-tracker" target="_blank">Source</Button>
+                            </CardActions>
                         </Animation> 
                     </Grid>
+                    {/*Portfolio Card*/}
                     <Grid item component={Card} xs={12} sm={12} md={5.5} className="card" style={{backgroundColor: "black"}}>
                         <Animation> 
-                        <CardMedia
-                        component="img"
-                        image={portfolioProject}
-                        alt="green iguana"
-                        className="cardRow2"
-                        />
+                        <CardMedia component="img" image={portfolioProject} alt="Portfolio Project Image" className="cardRow2"/>
                         <CardContent>
                             <Typography gutterBottom variant="h5" component="div" color="white">Portfolio Website</Typography>
-                            <Typography variant="body1" color="white">
-                            My personal portfolio website. Built using React.JS, Material.UI, React Router and React Router Hash Link. Fully Responsive.
-                            </Typography>
+                            <Typography variant="body1" color="white">My personal portfolio website. Built using React.JS, Material.UI, React Router and React Router Hash Link. Fully Responsive.</Typography>
                         </CardContent>
                         <CardActions>
+                            <Modal open={portfolio} onClose={closePortfolio}>
+                                <Box sx={style}>
+                                    <Typography variant="h5" component="h2">Covid-18 Tracker</Typography>
+                                    <Typography variant="h6" component="h2" sx={{ mt: 2 }}>Goals of the project</Typography>
+                                    <Typography sx={{ mt: 2 }}>The goal of the Covid-19 tracker project was to use a API to pull covid-19 data and present this data using javascript librarys such as Leaflet JS and Chart JS.</Typography>
+                                    <Typography variant="h6" component="h2" sx={{ mt: 2 }}>Challenges Faced</Typography>
+                                    <Typography sx={{ mt: 2 }}>One of the challenges faced creating the covid-19 tracker was pulling data from multiple API's, manipulating this data using javascript methods such as map, then storing this data in state hooks and finally taking the data from the state hooks and presenting in the form of graphs and maps.<br /><br />Another challenge faced was the creation of the map feature using leaflet JS. This was a challenge as map center and zoom attribute needed to be dynamicdepending on country selected but leaflet JS didnt update automatically when state hook changed. So an extra function had to be created to set center and zoom for when the state hook changed.</Typography>
+                                </Box>
+                            </Modal>
                             <Box mr={1}>
-                                <Button size="small" onClick={handleOpen} variant="contained" color="success">Full Description</Button>
+                                <Button size="small" onClick={openPortfolio} variant="contained" color="success">Full Description</Button>
                             </Box>
                             <Button size="small" variant="outlined" href="https://github.com/lewispotticary/portfolio" target="_blank">Source</Button>
                         </CardActions>
                         </Animation> 
                     </Grid>
+                    {/*GitHub Card*/}
                     <Grid item component={Card} xs={12} sm={12} md={5.5} className="card" style={{backgroundColor: "black"}}>
                         <Animation> 
-                        <CardMedia
-                        component="img"
-                        image={githubImage}
-                        alt="green iguana"
-                        className="cardRow2"
-                        />
+                        <CardMedia component="img" image={githubImage} alt="Github Project Image" className="cardRow2"/>
                         <CardContent>
                             <Typography gutterBottom variant="h5" component="div" color="white">Other Projects</Typography>
-                            <Typography variant="body1" color="white" marginBottom="auto">
-                            Take a look at my personal GitHub account where I store all my personal projects, also see what I'm currently working on.
-                            </Typography>
+                            <Typography variant="body1" color="white" marginBottom="auto">Take a look at my personal GitHub account where I store all my personal projects, also see what I'm currently working on.</Typography>
                         </CardContent>
                         <CardActions>
                             <Button size="small" variant="contained" href="https://github.com/lewispotticary" target="_blank">All Projects</Button>
