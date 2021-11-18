@@ -1,11 +1,10 @@
 import React, {useEffect} from 'react';
 
-import ReactDOM from "react-dom";
-
+//Import of useInView function for animation when in view
 import { useInView } from "react-intersection-observer";
 
+//Import of Framer Motion
 import { motion, useAnimation } from 'framer-motion';
-import { duration } from '@mui/material';
 
 function Animation({ children}) {
 

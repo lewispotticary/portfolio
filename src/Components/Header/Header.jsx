@@ -1,13 +1,16 @@
 import React from 'react'
 
+//Import of style sheet
 import './Header.css';
 
-import {Typography, Button, Fab, Slide} from '@mui/material';
+//Import of Material UI
+import {Typography, Button} from '@mui/material';
 
+//Import of React Router and React Router Hash Link
 import { HashLink } from 'react-router-hash-link';
-
 import { BrowserRouter } from 'react-router-dom';
 
+//Import of Framer Motion
 import { motion } from 'framer-motion';
 
 function Header() {

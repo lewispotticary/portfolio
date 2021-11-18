@@ -1,9 +1,12 @@
 import React from 'react'
 
-import {Typography, Input, Button} from '@mui/material';
+//Import of Material UI
+import {Typography} from '@mui/material';
 
+//Import of style sheet
 import './About.css';
 
+//Import of animation function
 import Animation from '../Animation/Animation';
 
 function About() {

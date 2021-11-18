@@ -1,9 +1,12 @@
 import React from 'react'
 
-import {Typography, Input, Button} from '@mui/material';
+//Import of Material UI
+import {Typography, Button} from '@mui/material';
 
+//Import of style sheet
 import './Contact.css'
 
+//Import of Animation function
 import Animation from '../Animation/Animation';
 
 function Contact() {
@@ -14,16 +17,12 @@ function Contact() {
         </div>
         <Animation>
         <div className="contactContainer">
-                
-            
-            
             <form
             name="contact-form"
             method="POST"
             data-netlify="true"
             className="formContent"
             >
-                
                 <input type="hidden" name="form-name" value="contact-form"/>
                 <input type="text" placeholder="Name" name="name"/>
                 <input type="text" placeholder="Email" name="email"/>
@@ -35,8 +34,6 @@ function Contact() {
         </div>
         </Animation>
         </div>
-       
-        
     )
 }
 

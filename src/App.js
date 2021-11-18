@@ -8,7 +8,6 @@ import Body from './Components/Body/Body'
 import Contact from './Components/Contact/Contact';
 import About from './Components/About/About';
 import Footer from './Components/Footer/Footer';
-import Animation from './Components/Animation/Animation';
 
 function App() {
   return (

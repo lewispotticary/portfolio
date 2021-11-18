@@ -1,17 +1,18 @@
 import React from 'react';
 
+//Import of style sheet
 import './Body.css'
 
+//Import of images
 import covidTrackerImage from './covidTrackerProject.JPG'
-
 import expenseTrackerImage from './expenseTrackerProject.JPG'
-
 import portfolioProject from './portfolioProject.JPG'
-
 import githubImage from './githubImage.jpg'
 
+//Import of Material UI
 import {Typography, Button, Card, CardMedia, CardContent, CardActions, Grid, Modal, Box, } from '@mui/material';
 
+//Import of Animation function
 import Animation from '../Animation/Animation';
 
 function Body() {

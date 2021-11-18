@@ -5,22 +5,23 @@ import './Navigation.css'
 
 //Import of Material UI components
 import {Breadcrumbs, Link, Typography} from '@mui/material';
-
-import { HashLink } from 'react-router-hash-link';
-
 import Box from '@mui/material/Box';
 import Drawer from '@mui/material/Drawer';
 import List from '@mui/material/List';
 import MenuIcon from '@mui/icons-material/Menu';
 
+//Import of React Router and React Router Hash Link
 import { BrowserRouter } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 
 function Navigation() {
 
+    //Drawer set state
     const [state, setState] = React.useState({
       right: false,
     });
 
+    //Drawer toggle Function
     const toggleDrawer = (anchor, open) => (event) => {
       if (event.type === 'keydown' && (event.key === 'Tab' || event.key === 'Shift')) {
         return;
@@ -28,6 +29,7 @@ function Navigation() {
       setState({ ...state, [anchor]: open });
     };
     
+    //Drawer content function
     const list = (anchor) => (
       <Box
         sx={{ width: anchor === 'top' || anchor === 'bottom' ? 'auto' : 250}}
@@ -44,7 +46,8 @@ function Navigation() {
         </List> 
       </Box>
     );
-
+    
+    //Website Logo
     const logo = "{LP}"
 
     return (

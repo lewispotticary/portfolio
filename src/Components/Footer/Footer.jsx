@@ -1,19 +1,20 @@
 import React from 'react'
 
+//Import of style sheet
 import './Footer.css'
 
+//Import of React Router and React Router Hash Link
 import { HashLink } from 'react-router-hash-link';
-
 import { BrowserRouter } from 'react-router-dom';
 
+//Import of Material UI
 import ExpandLessIcon from '@mui/icons-material/ExpandLess';
 
+//Import of images
 import linkedinLogo from './linkedinLogo.png'
-
 import githubLogo from './githubLogo.png'
 
 function Footer() {
-    
     return (
         <BrowserRouter>
             <div className="footerContainer">
