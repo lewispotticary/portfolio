@@ -37,10 +37,11 @@ function Body() {
         left: '50%',
         transform: 'translate(-50%, -50%)',
         width: 400,
-        bgcolor: 'background.paper',
-        border: '2px solid #000',
+        bgcolor: 'black',
+        border: '2px solid white',
         boxShadow: 24,
         p: 4,
+        color: 'white',
       };
     
     return (
@@ -63,13 +64,13 @@ function Body() {
                             <CardActions>
                                 <Modal open={covidTracker} onClose={closeCovidTracker}>
                                     <Box sx={style}>
-                                        <Typography variant="h5" component="h2">Covid-19 Tracker</Typography>
-                                        <Typography variant="h6" component="h2" sx={{ mt: 2 }}>Goals of the project</Typography>
-                                        <Typography sx={{ mt: 2 }}>The goal of the Covid-19 tracker project was to use a API to pull covid-19 data and present this data using javascript librarys such as Leaflet JS and Chart JS.</Typography>
-                                        <Typography variant="h6" component="h2" sx={{ mt: 2 }}>Challenges Faced</Typography>
-                                        <Typography sx={{ mt: 2 }}>One of the challenges faced creating the covid-19 tracker was pulling data from multiple API's, manipulating this data using javascript methods such as map, then storing this data in state hooks and finally taking the data from the state hooks and presenting in the form of graphs and maps.<br /><br />A specific issue faced was the creation of the map feature using leaflet JS. This was a challenge as map center and zoom attribute needed to be dynamic depending on country selected but leaflet JS didnt update automatically when state hook changed. So an extra function had to be created to set center and zoom for when the state hook changed.</Typography>
-                                        <Typography variant="h6" component="h2" sx={{ mt: 2 }}>What I learnt</Typography>
-                                        <Typography sx={{ mt: 2 }}>This was the first project using Material UI a user interface library. As this was the first time using Material UI there was a learning curve on the different components and tailoring these components to my needs.<br /><br />Finally I learnt how to use media queries to create different layouts for different screen sizes as this project used both a row and cloumn layout on large screens and row only on small screens.</Typography>
+                                        <Typography variant="h5" component="h2"><b>Covid-19 Tracker</b></Typography>
+                                        <Typography variant="h6" component="h2" sx={{ mt: 2 }}><b>Goals of the project</b></Typography>
+                                        <Typography sx={{ mt: 2 }}>The goal of the Covid-19 tracker project was to use an API to pull covid-19 data and present this data using JavaScript libraries such as Leaflet JS and Chart JS.</Typography>
+                                        <Typography variant="h6" component="h2" sx={{ mt: 2 }}><b>Challenges Faced</b></Typography>
+                                        <Typography sx={{ mt: 2 }}>One of the challenges faced creating the covid-19 tracker was pulling data from multiple API's, manipulating this data using javascript methods such as map, then storing this data in state hooks and finally taking the data from the state hooks and presenting in the form of graphs and maps.<br /><br />A specific issue faced was the creation of the map feature using leaflet JS. This was a challenge as map center and zoom attribute needed to be dynamic depending on country selected but leaflet JS didn't update automatically when state hook changed. So, an extra function had to be created to set center and zoom for when the state hook changed.</Typography>
+                                        <Typography variant="h6" component="h2" sx={{ mt: 2 }}><b>What I learnt</b></Typography>
+                                        <Typography sx={{ mt: 2 }}>This was the first project using Material UI a user interface library. As this was the first-time using Material UI there was a learning curve on the different components and tailoring these components to my needs.<br /><br />Finally, I learnt how to use media queries to create different layouts for different screen sizes as this project used both a row and column layout on large screens and row only on small screens.</Typography>
                                     </Box>
                                 </Modal>
                                 <Box mr={1}>
@@ -91,13 +92,13 @@ function Body() {
                             <CardActions>
                                 <Modal open={expenseTracker} onClose={closeExpenseTracker}>
                                     <Box sx={style}>
-                                        <Typography variant="h5" component="h2">Expense Tracker</Typography>
-                                        <Typography variant="h6" component="h2" sx={{ mt: 2 }}>Goals of the project</Typography>
+                                        <Typography variant="h5" component="h2"><b>Expense Tracker</b></Typography>
+                                        <Typography variant="h6" component="h2" sx={{ mt: 2 }}><b>Goals of the project</b></Typography>
                                         <Typography sx={{ mt: 2 }}>The goal of the expense tracker project was to allow a user to input expense data, this data is then organised and displayed in the form of a list and finally allow the user to filter this data.</Typography>
-                                        <Typography variant="h6" component="h2" sx={{ mt: 2 }}>Challenges Faced</Typography>
-                                        <Typography sx={{ mt: 2 }}>The main challenge of the expense tracker was the filter functions, this being the name, category and date filters. This was a challenge as it involved using multiple javascript methods such as sort, filter and map to manipulate data.<br /><br />A specific challenge faced was a bug related to the date filter function where the date filter state would change but not UI sometimes, to overcome this challenge I had to pass a new array into the date filter state so the UI would change every time.</Typography>
-                                        <Typography variant="h6" component="h2" sx={{ mt: 2 }}>What I learnt</Typography>
-                                        <Typography sx={{ mt: 2 }}>As this was my first project using React I learnt the React fundamentals such as useState, useEffect, components, props, JSX syntax and also I learnt how to think in React. Also I learnt how to implement React Bootsrap and React Chart JS.</Typography>
+                                        <Typography variant="h6" component="h2" sx={{ mt: 2 }}><b>Challenges Faced</b></Typography>
+                                        <Typography sx={{ mt: 2 }}>The main challenge of the expense tracker was the filter functions, this being the name, category and date filters. This was a challenge as it involved using multiple JavaScript methods such as sort, filter and map to manipulate data.<br /><br />A specific challenge faced was a bug related to the date filter function where the date filter state would change but not UI sometimes, to overcome this challenge I had to pass a new array into the date filter state so the UI would change every time.</Typography>
+                                        <Typography variant="h6" component="h2" sx={{ mt: 2 }}><b>What I learnt</b></Typography>
+                                        <Typography sx={{ mt: 2 }}>As this was my first project using React, I learnt the React fundamentals such as useState, useEffect, components, props, JSX syntax and also, I learnt how to think in React. Also, I learnt how to implement React Bootstrap and React Chart JS.</Typography>
                                     </Box>
                                 </Modal>
                                 <Box mr={1}>
@@ -119,13 +120,13 @@ function Body() {
                         <CardActions>
                             <Modal open={portfolio} onClose={closePortfolio}>
                                 <Box sx={style}>
-                                    <Typography variant="h5" component="h2">Portfolio Website</Typography>
-                                    <Typography variant="h6" component="h2" sx={{ mt: 2 }}>Goals of the project</Typography>
+                                    <Typography variant="h5" component="h2"><b>Portfolio Website</b></Typography>
+                                    <Typography variant="h6" component="h2" sx={{ mt: 2 }}><b>Goals of the project</b></Typography>
                                     <Typography sx={{ mt: 2 }}>The goal of the portfolio website project was to show case all my best projects in one place and to design and create a single page website.</Typography>
-                                    <Typography variant="h6" component="h2" sx={{ mt: 2 }}>Challenges Faced</Typography>
-                                    <Typography sx={{ mt: 2 }}>One of the challenges faced creating the portfolio website was making a website that was visually appealing aswell as fully responsive so it can be viewed on a multitude of devices.<br /><br />A few specific challenges faced was the implementation of animation of components when in view, netlify contact form and finally navigation anchors using React Router Hash Link.</Typography>
-                                    <Typography variant="h6" component="h2" sx={{ mt: 2 }}>What I learnt</Typography>
-                                    <Typography sx={{ mt: 2 }}>I learnt the process of creating a single page website and the testing involved to make sure it's fully response. Also I learnt how to add animation using framer motion, implementing navigation anchors using React Router Hash Link and finally customizing Material UI components to suit my design needs.</Typography>
+                                    <Typography variant="h6" component="h2" sx={{ mt: 2 }}><b>Challenges Faced</b></Typography>
+                                    <Typography sx={{ mt: 2 }}>One of the challenges faced creating the portfolio website was making a website that was visually appealing as well as fully responsive so it can be viewed on a multitude of devices.<br /><br />A few specific challenges faced was the implementation of animation of components when in view, Netlify contact form and finally navigation anchors using React Router Hash Link.</Typography>
+                                    <Typography variant="h6" component="h2" sx={{ mt: 2 }}><b>What I learnt</b></Typography>
+                                    <Typography sx={{ mt: 2 }}>I learnt the process of creating a single page website and the testing involved to make sure it's fully response. Also, I learnt how to add animation using framer motion, implementing navigation anchors using React Router Hash Link and finally customizing Material UI components to suit my design needs.</Typography>
                                 </Box>
                             </Modal>
                             <Box mr={1}>
