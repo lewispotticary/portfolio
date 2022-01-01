@@ -77,7 +77,7 @@ function Body() {
                                 <Box mr={1}>
                                     <Button size="small" onClick={openCovidTracker} variant="contained" color="success">Full Description</Button>
                                 </Box>
-                                <Button size="small" variant="contained" href="https://musing-bassi-1d4cea.netlify.app/" target="_blank">Live Site</Button>
+                                <Button size="small" variant="contained" href="https://covid-19-data-tracker-app.netlify.app/" target="_blank">Live Site</Button>
                                 <Button size="small" variant="outlined" href="https://github.com/lewispotticary/coronavirus-tracker" target="_blank">Source</Button>
                             </CardActions>
                         </Animation> 
@@ -105,7 +105,7 @@ function Body() {
                                 <Box mr={1}>
                                     <Button size="small" onClick={openExpenseTracker} variant="contained" color="success">Full Description</Button>
                                 </Box>
-                                <Button size="small" variant="contained" href="https://naughty-montalcini-8be930.netlify.app/" target="_blank">Live Site</Button>
+                                <Button size="small" variant="contained" href="https://expense-tracker-react-site.netlify.app/" target="_blank">Live Site</Button>
                                 <Button size="small" variant="outlined" href="https://github.com/lewispotticary/react-expense-tracker" target="_blank">Source</Button>
                             </CardActions>
                         </Animation> 
