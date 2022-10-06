@@ -120,20 +120,6 @@ function Body() {
                                 <Typography variant="body1" color="white">Recreation of the popular GeoGuessr game. Find clues and guess where you are in the world. First full-stack web application. Created using Firebase, Javascript, HTML, CSS and random streetview library. Fully responsive</Typography>
                             </CardContent>
                             <CardActions>
-                                <Modal open={expenseTracker} onClose={closeExpenseTracker}>
-                                    <Box sx={style}>
-                                        <Typography variant="h5" component="h2"><b>Expense Tracker</b></Typography>
-                                        <Typography variant="h6" component="h2" sx={{ mt: 2 }}><b>Goals of the project</b></Typography>
-                                        <Typography sx={{ mt: 2 }}>The goal of the project was to recreate the popular GeoGuessr game and create a public leaderboard for the game.</Typography>
-                                        <Typography variant="h6" component="h2" sx={{ mt: 2 }}><b>Challenges Faced</b></Typography>
-                                        <Typography sx={{ mt: 2 }}>The main challenge of the GeoGuessr game was getting the random street view locations. The solution to this challenge was to use a library called random street view to generate the coordinates, these are stored then picked out at random when needed. <br /><br />Another challenge faced was the creation of the backend for the leader board. The solution to this challenge was using Firebase for the authentication and storage of data.</Typography>
-                                        <Typography variant="h6" component="h2" sx={{ mt: 2 }}><b>What I learnt</b></Typography>
-                                        <Typography sx={{ mt: 2 }}>I learnt how to implement Firebase into a project</Typography>
-                                    </Box>
-                                </Modal>
-                                <Box mr={1}>
-                                    <Button size="small" onClick={openExpenseTracker} variant="contained" color="success">Full Description</Button>
-                                </Box>
                                 <Button size="small" variant="contained" href="https://geoguessr-game.netlify.app/" target="_blank">Live Site</Button>
                                 <Button size="small" variant="outlined" href="https://github.com/lewispotticary/geoguessr-game" target="_blank">Source</Button>
                             </CardActions>
