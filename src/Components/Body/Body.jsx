@@ -9,6 +9,7 @@ import expenseTrackerImage from './expenseTrackerProject.JPG'
 import portfolioProject from './portfolioProject.JPG'
 import githubImage from './githubImage.jpg'
 import geoguessrProject from './geoguessrProject.JPG'
+import mileageTrackerProject from './mileageTrackerProject.JPG'
 
 //Import of Material UI
 import {Typography, Button, Card, CardMedia, CardContent, CardActions, Grid, Modal, Box, } from '@mui/material';
@@ -122,6 +123,20 @@ function Body() {
                             <CardActions>
                                 <Button size="small" variant="contained" href="https://geoguessr-game.netlify.app/" target="_blank">Live Site</Button>
                                 <Button size="small" variant="outlined" href="https://github.com/lewispotticary/geoguessr-game" target="_blank">Source</Button>
+                            </CardActions>
+                        </Animation> 
+                    </Grid>
+                    {/*Mileage Tracker*/}
+                    <Grid item component={Card} xs={12} sm={12} md={5.5} className="card" style={{backgroundColor: "black"}}>
+                        <Animation> 
+                            <CardMedia component="img" image={mileageTrackerProject} alt="Expense Tracker Project Image" className="cardRow1"/>
+                            <CardContent>
+                                <Typography gutterBottom variant="h5" component="div" color="white">Mileage Tracker</Typography>
+                                <Typography variant="body1" color="white">Full stack mileage tracker application. Created using HTML, CSS, JavaScript, NodeJS, ExpressJS, PostgreSQL and Firebase.</Typography>
+                            </CardContent>
+                            <CardActions>
+                                <Button size="small" variant="contained" href="https://mileage-app-tracker.herokuapp.com/" target="_blank">Live Site</Button>
+                                <Button size="small" variant="outlined" href="https://github.com/lewispotticary/mileage-tracker" target="_blank">Source</Button>
                             </CardActions>
                         </Animation> 
                     </Grid>
