@@ -33,7 +33,7 @@ function Header() {
                             <Typography className="boxText" variant="h4" color="white"><b>&nbsp;and Surfer &#10132;</b></Typography>
                         </div>
                         <div className="secondaryBox">
-                            <Typography color="white">Picture By: <a href="https://www.elliscollinsphoto.co.uk/" target="_blank">Ellis Collins</a></Typography>
+                            <Typography color="white">Picture By: <a href="https://www.instagram.com/elliscollins/" target="_blank">Ellis Collins</a></Typography>
                         </div>
                     </motion.div>
                     <motion.div
