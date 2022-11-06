@@ -29,7 +29,7 @@ function Header() {
                         transition={{ ease: "easeOut", duration: 1, delay: 2 }}
                     >
                         <div className="box">
-                            <Typography variant="h4" color="white"><b>Aspiring Front-end Developer</b></Typography>
+                            <Typography variant="h4" color="white"><b>Aspiring Web Developer</b></Typography>
                             <Typography className="boxText" variant="h4" color="white"><b>&nbsp;and Surfer &#10132;</b></Typography>
                         </div>
                         <div className="secondaryBox">
